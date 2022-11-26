@@ -1,9 +1,6 @@
 <!-- Logo -->
 <h1 align="center">
-  <img src="logo.webp" height="300px" width="350px" alt="Slash">
-  <br>
-  Slash
-  <br>
+  <img src="logo.webp" height="400px" width="600px" alt="Slash">
 </h1>
 
 
@@ -34,10 +31,10 @@ python slash.py username # or mail adress
 python slash.py thesaderror
 ```
 <h1 align="center">
-  <img src="./images/1.png" height="300px" width="350px">
+  <img src="./images/1.png">
 </h1>
 <h1 align="center">
-  <img src="./images/2.png" height="300px" width="350px">
+  <img src="./images/2.png">
 </h1>
 
 Contact (Discord) : thesaderror#1351
