@@ -1,0 +1,3 @@
+sockets
+requests
+pyfiglet

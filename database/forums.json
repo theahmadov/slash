@@ -1,0 +1,232 @@
+{
+    "forums" : [
+        {
+            "name" : "biohacking",
+            "url" : "https://forum.dangerousthings.com/u/{}",
+            "check_code" : "2",
+            "check" : 404
+        },
+
+        {
+            "name" : "hackthebox",
+            "url" : "https://forum.hackthebox.eu/profile/{}",
+            "check_code" : "2",
+            "check" : 404
+        },
+
+        {
+            "name" : "ionic",
+            "url" : "https://forum.ionicframework.com/u/{}",
+            "check_code" : "2",
+            "check" : 404
+        },
+        
+        {
+            "name" : "crunchify",
+            "url" : "https://ask.crunchify.com/u/{}/summary",
+            "check_code" : "2",
+            "check" : 404
+        },
+        
+        {
+            "name" : "gunsandammo",
+            "url" : "https://forums.gunsandammo.com/profile/{}",
+            "check_code" : "2",
+            "check" : 404
+        },
+        
+        {
+            "name" : "bbpress",
+            "url" : "https://bbpress.org/forums/profile/{}/",
+            "check_code" : "2",
+            "check" : 404
+        },
+
+        {
+            "name" : "joplinapp",
+            "url" : "https://discourse.joplinapp.org/u/{}",
+            "check_code" : "2",
+            "check" : 404
+        },
+
+        {
+            "name" : "native-instruments",
+            "url" : "https://www.native-instruments.com/forum/members?username={}",
+            "check_code" : "3",
+            "check" : "The specified member cannot be found"
+        },
+
+        {
+            "name" : "leasehackr",
+            "url" : "https://forum.leasehackr.com/u/{}/summary/",
+            "check_code" : "2",
+            "check" : 404
+        },
+
+        {
+            "name" : "bitwarden",
+            "url" : "https://community.bitwarden.com/u/{}/summary",
+            "check_code" : "2",
+            "check" : 404
+        },
+
+        {
+            "name" : "ardunio",
+            "url" : "https://create.arduino.cc/projecthub/{}",
+            "check_code" : "2",
+            "check" : 404
+        },
+
+        {
+            "name" : "bitcoin",
+            "url" : "https://bitcoinforum.com/profile/{}",
+            "check_code" : "3",
+            "check" : "The user whose profile you are trying to view does not exist."
+        },
+        {
+            "name" : "whonix",
+            "url" : "https://forums.whonix.org/u/{}/summary",
+            "check_code" : "2",
+            "check" : 404
+        },
+
+        {
+            "name" : "elastic",
+            "url" : "https://discuss.elastic.co/u/{}",
+            "check_code" : "2",
+            "check" : 404
+        },
+
+        {
+            "name" : "ask-fedora",
+            "url" : "https://ask.fedoraproject.org/u/{}",
+            "check_code" : "2",
+            "check" : 404
+        },
+
+        {
+            "name" : "brave",
+            "url" : "https://community.brave.com/u/{}/",
+            "check_code" : "2",
+            "check" : 404
+        },
+
+        {
+            "name" : "cloudflare",
+            "url" : "https://community.cloudflare.com/u/{}",
+            "check_code" : "2",
+            "check" : 404
+        },
+
+        {
+            "name" : "cryptomator",
+            "url" : "https://community.cryptomator.org/u/{}",
+            "check_code" : "2",
+            "check" : 404
+        },
+
+        {
+            "name" : "dev.to",
+            "url" : "https://dev.to/{}",
+            "check_code" : "2",
+            "check" : 404
+        },
+
+        {
+            "name" : "pcgamer",
+            "url" : "https://forums.pcgamer.com/members/?username={}",
+            "check_code" : "3",
+            "check" : "The specified member cannot be found. Please enter a member's entire name."
+        },
+
+        {
+            "name" : "oracle",
+            "url" : "https://community.oracle.com/people/{}",
+            "check_code" : "2",
+            "check" : 404
+        },
+
+        {
+            "name" : "signal",
+            "url" : "https://community.signalusers.org/u/{}/summary",
+            "check_code" : "2",
+            "check" : 404
+        },
+
+        {
+            "name" : "steamgroup",
+            "url" : "https://steamcommunity.com/groups/{}",
+            "check_code" : "3",
+            "check" : "No group could be retrieved for the given URL."
+        },
+
+        {
+            "name" : "windy",
+            "url" : "https://community.windy.com/user/{}",
+            "check_code" : "2",
+            "check" : 404
+        },
+
+        {
+            "name" : "envato",
+            "url" : "https://forums.envato.com/u/{}",
+            "check_code" : "2",
+            "check" : 404
+        },
+
+        {
+            "name" : "apple",
+            "url" : "https://developer.apple.com/forums/profile/{}",
+            "check_code" : "2",
+            "check" : 404
+        },
+
+        {
+            "name" : "wolfram",
+            "url" : "https://community.wolfram.com/web/{}/home",
+            "check_code" : "2",
+            "check" : 404
+        },
+        {
+            "name" : "egpu.io",
+            "url" : "https://egpu.io/forums/profile/{}/",
+            "check_code" : "2",
+            "check" : 404
+        },
+
+        {
+            "name" : "eintracht",
+            "url" : "https://community.eintracht.de/fans/{}",
+            "check_code" : "2",
+            "check" : 404
+        },
+
+        {
+            "name" : "rclone",
+            "url" : "https://forum.rclone.org/u/{}",
+            "check_code" : "2",
+            "check" : 404
+        },
+
+        {
+            "name" : "nextcloud",
+            "url" : "https://help.nextcloud.com/u/{}/summary",
+            "check_code" : "2",
+            "check" : 404
+        },
+
+        {
+            "name" : "sublime",
+            "url" : "https://forum.sublimetext.com/u/{}",
+            "check_code" : "2",
+            "check" : 404
+        },
+
+        {
+            "name" : "warrior",
+            "url" : "https://www.warriorforum.com/members/{}.html",
+            "check_code" : "2",
+            "check" : 404
+        }
+    ]
+}

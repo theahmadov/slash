@@ -1,0 +1,2448 @@
+{
+    "0" : {
+        "name" : "github",
+        "desc" : "See programming skills in GitHub.",
+        "type" : "notapi",
+        "url"  : "https://github.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : true,
+        "_scrape" : {
+            "0" : {
+                "name" : "Name",
+                "cname" : "span",
+                "class" : "p-name vcard-fullname d-block overflow-hidden"
+            },
+            "1" : {
+                "name" : "Location",
+                "cname" : "span",
+                "class" : "p-label"
+            },
+            "2" : {
+                "name" : "Website",
+                "cname" : "a",
+                "class" : "Link--primary"
+            },
+            "3" : {
+                "name" : "Bio",
+                "cname" : "div",
+                "class" : "p-note user-profile-bio mb-3 js-user-profile-bio f4"
+            }
+        },
+        "method" : "GET"
+    },
+    
+    "1" : {
+        "name" : "steam",
+        "desc" : "Steam is a video game digital distribution service and storefront by Valve. It was launched as a software client in September 2003 as a way for Valve to provide automatic updates for their games, and expanded to distributing and offering third-party game publishers' titles in late 2005.",
+        "type" : "notapi",
+        "url"  : "https://steamcommunity.com/id/{}",
+        "messages" : {
+            "notfound" : "The specified profile could not be found."
+        },
+        "scrape" : true,
+        "_scrape" : {
+            "name" : "Name",
+            "cname" : "div",
+            "class" : "header_real_name ellipsis"
+        },
+        "method" : "GET"
+    },
+    
+    "2" : {
+        "name" : "vk",
+        "desc" : "Russia based social meda platform.",
+        "type" : "notapi",
+        "url"  : "https://vk.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : true,
+        "_scrape" : {
+            "0" : {
+                "name" : "Name",
+                "cname" : "h1",
+                "class" : "page_name"
+            }
+        },
+        "method" : "GET"
+    },
+    
+    "3" : {
+        "name" : "tumblr",
+        "desc" : "Tumblr is an American microblogging and social networking website.",
+        "type" : "notapi",
+        "url"  : "https://www.tumblr.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : true,
+        "_scrape" : {
+            "0" : {
+                "name" : "Name",
+                "cname" : "h1",
+                "class" : "vfPi2"
+            },
+            "1" : {
+                "name" : "Bio",
+                "cname" : "div",
+                "class" : "a15fm mjAxW"
+            }
+        },
+        "method" : "GET"
+    },
+
+    "4" : {
+        "name" : "devintart",
+        "desc" : "DeviantArt is an American online art community that features artwork, videography and photography.",
+        "type" : "notapi",
+        "url"  : "https://www.deviantart.com/{}/",
+        "messages" : {
+            "notfound" : "Page Not Found"
+        },
+        "scrape" : true,
+        "_scrape" : {
+            "0" : {
+                "name" : "Name",
+                "cname" : "h1",
+                "class" : "_38K3K"
+            },
+            "1" : {
+                "name" : "Bio",
+                "cname" : "div",
+                "class" : "_33syq"
+            }
+        },
+        "method" : "GET"
+    },
+
+    
+    "5" : {
+        "name" : "roblox",
+        "desc" : "Roblox is an online game platform and game creation system developed by Roblox Corporation that allows users to program games and play games created by other users.",
+        "type" : "notapi",
+        "url"  : "https://www.roblox.com/user.aspx?username={}",
+        "messages" : {
+            "notfound" : "Page cannot be found or no longer exists"
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "6" : {
+        "name" : "pastebin",
+        "desc" : "A pastebin or text storage site is a type of online content-hosting service where users can store plain text.",
+        "type" : "notapi",
+        "url"  : "https://pastebin.com/u/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "7" : {
+        "name" : "kaggle",
+        "desc" : "Kaggle, a subsidiary of Google LLC. Kaggle allows users to find and publish data sets, explore and build models in a web-based data-science environment, work with other data scientists and machine learning engineers, and enter competitions to solve data science challenges.",
+        "type" : "notapi",
+        "url"  : "https://www.kaggle.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : true,
+        "_scrape" : {
+            "0" : {
+                "name" : "User Info",
+                "cname" : "div",
+                "class" : "profile__user-info"
+            }
+        },
+        "method" : "GET"
+    },
+
+    "8" : {
+        "name" : "instagram",
+        "desc" : "Instagram is a photo and video sharing social networking service owned by American company Meta Platforms.",
+        "type" : "notapi",
+        "url"  : "https://www.instagram.com/{}/",
+        "messages" : {
+            "notfound" : "<title>Instagram</title>"
+        },
+        "scrape" : true,
+        "_scrape" : {
+            "0" : {
+                "name" : "Bio",
+                "cname" : "div",
+                "class" : "_aa_c"
+            }
+        },
+        "method" : "GET"
+    },
+
+    "9" : {
+        "name" : "hackerearth",
+        "desc" : "HackerEarth is an Indian software company headquartered in San Francisco, US, that provides enterprise software that assists organizations with technical hiring.",
+        "type" : "notapi",
+        "url"  : "https://hackerearth.com/@{}",
+        "messages" : {
+            "notfound" : "404. URL not found."
+        },
+        "scrape" : true,
+        "_scrape" : {
+            "0" : {
+                "name" : "Name",
+                "cname" : "div",
+                "class" : "name"
+            },
+            "1" : {
+                "name" : "Location",
+                "cname" : "div",
+                "class" : "location"
+            },
+            "2" : {
+                "name" : "Education",
+                "cname" : "div",
+                "class" : "education"
+            }
+        },
+        "method" : "GET"
+    },
+
+    "10" : {
+        "name" : "hackerrank",
+        "desc" : "HackerRank is the market-leading technical assessment and remote interview solution for hiring developers. Learn how to hire technical talent from anywhere!",
+        "type" : "notapi",
+        "url"  : "https://www.hackerrank.com/{}?hr_r=1",
+        "messages" : {
+            "notfound" : "Something went wrong"
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "11" : {
+        "name" : "artstation",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.artstation.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : true,
+        "_scrape" : {
+            "0" : {
+                "name":"Name",
+                "cname":"h1",
+                "class":"artist-name"
+            },
+            "1" : {
+                "name":"Bio",
+                "cname":"div",
+                "class":"artist-additional-info"
+            }
+        },
+        "method" : "GET"
+    },
+
+    "12" : {
+        "name" : "7cups",
+        "desc" : "7 Cups is an online platform that provides counseling and therapy. ",
+        "type" : "notapi",
+        "url"  : "https://www.7cups.com/@{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : true,
+        "_scrape": {
+            "0" : {
+                "name" : "Bio",
+                "cname" : "div",
+                "class" : "collapse-partial text-center show"
+            },
+            "1" : {
+                "name" : "User Info",
+                "cname" : "div",
+                "class" : "row justify-content-center small mt-0 pt-2"
+            }
+        },
+        "method" : "GET"
+    },
+
+    "13" : {
+        "name" : "9gag",
+        "desc" : "9GAG is an online platform and social media website based in Hong Kong, which allows its users to upload and share user-generated content or other content from external social media websites.",
+        "type" : "notapi",
+        "url"  : "https://www.9gag.com/u/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : true,
+        "_scrape": {
+            "0" : {
+                "name" : "Name",
+                "cname" : "div",
+                "class" : "info-name"
+            },
+            "1" : {
+                "name" : "Bio",
+                "cname" : "div",
+                "class" : "ui-user-profile__about"
+            }
+        },
+        "method" : "GET"
+    },
+
+    "14" : {
+        "name" : "about.me",
+        "desc" : "about.me is a personal web hosting service co-founded by Ryan Freitas, Tony Conrad and Tim Young in October 2009. The site offers registered users a simple platform from which to link multiple online identities, relevant external sites, and popular social networking websites such as Facebook, Flickr, and Google+.",
+        "type" : "notapi",
+        "url"  : "https://about.me/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : true,
+        "_scrape": {
+            "0" : {
+                "name" : "Name",
+                "cname" : "h1",
+                "class" : "name"
+            },
+            "1" : {
+                "name" : "Location",
+                "cname" : "span",
+                "class" : "location"
+            },
+            "2" : {
+                "name" : "Bio",
+                "cname" : "section",
+                "class" : "bio inset short-bio"
+            }
+        },
+        "method" : "GET"
+    },
+
+    "15" : {
+        "name" : "youtube",
+        "desc" : "YouTube is an American online video sharing and social media platform headquartered in San Bruno, California. It was launched on February 14, 2005, by Steve Chen, Chad Hurley, and Jawed Karim. It is owned by Google, and is the second most visited website, after Google Search.",
+        "type" : "notapi",
+        "url"  : "https://www.youtube.com/@{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "16" : {
+        "name" : "bikemap",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.bikemap.net/en/u/{}/routes/created/",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "17" : {
+        "name" : "codepen",
+        "desc" : "CodePen is an online community for testing and showcasing user-created HTML, CSS and JavaScript code snippets. It functions as an online code editor and open-source learning environment, where developers can create code snippets and test them.",
+        "type" : "notapi",
+        "url"  : "https://codepen.io/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : true,
+        "_scrape" :{
+            "0" : {
+                "name" : "Location",
+                "cname":"div", 
+                "class":"profile-location"
+            },
+            "1" : {
+                "name" : "Bio",
+                "cname" : "div",
+                "class" : "profile-bio"
+            }
+        },
+        "method" : "GET"
+    },
+
+    "18" : {
+        "name" : "telegram",
+        "desc" : "Telegram Messenger is a globally accessible freemium, cross-platform, encrypted, cloud-based and centralized instant messaging service. The service also provides optional end-to-end encrypted chats and video calling, VoIP, file sharing and several other features.",
+        "type" : "notapi",
+        "url"  : "https://t.me/{}",
+        "messages" : {
+            "notfound" : "<meta property=\"og:description\" content=\"\">"
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "19" : {
+        "name" : "codechef",
+        "desc" : "Code-Chef is an online educational program and competitive programming community of global programmers. Code-Chef started as an educational initiative in 2009 by Directi, an Indian software company. In 2020, it became owned by Unacademy.",
+        "type" : "notapi",
+        "url"  : "https://www.codechef.com/users/{}",
+        "messages" : {
+            "notfound" : 302
+        },
+        "scrape" : true,
+        "_scrape" :{
+            "0" : {
+                "name" : "Name",
+                "cname":"h1", 
+                "class":"h2-style"
+            }
+        },
+        "method" : "GET"
+    },
+
+    "20" : {
+        "name" : "leetcode",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://leetcode.com/{}/",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "21" : {
+        "name" : "etsy",
+        "desc" : "Etsy, Inc. is an American e-commerce company focused on handmade or vintage items and craft supplies. These items fall under a wide range of categories, including jewelry, bags, clothing, home décor and furniture, toys, art, as well as craft supplies and tools. Items described as vintage must be at least 20 years old.",
+        "type" : "notapi",
+        "url"  : "https://www.etsy.com/shop/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "22" : {
+        "name" : "codewars",
+        "desc" : "Codewars is an educational community for computer programming. On the platform, software developers train on programming challenges known as kata. These discrete programming exercises train a range of skills in a variety of programming languages, and are completed within an online integrated development environment.",
+        "type" : "notapi",
+        "url"  : "https://www.codewars.com/users/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : true,
+        "_scrape" :{
+            "0" : {
+                "name" : "User Info",
+                "cnmae":"div", 
+                "class":"flex-box"
+            }
+        },
+        "method" : "GET"
+    },
+
+    "23" : {
+        "name" : "eolymp",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.eolymp.com/en/users/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "24" : {
+        "name" : "codecademy",
+        "desc" : "Codecademy is an American online interactive platform that offers free coding classes in 12 different programming languages including Python, Java, Go, JavaScript, Ruby, SQL, C++, C#, Swift, and Sass, as well as markup languages HTML and CSS.",
+        "type" : "notapi",
+        "url"  : "https://www.codecademy.com/profiles/{}",
+        "messages" : {
+            "notfound" : "This profile could not be found"
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "25" : {
+        "name" : "gitlab",
+        "desc" : "GitLab Inc. is an open-core company that operates GitLab, a DevOps software package that combines the ability to develop, secure, and operate software in a single application. The open source software project was created by Ukrainian developer Dmitriy Zaporozhets and Dutch developer Sytse Sijbrandij.",
+        "type" : "notapi",
+        "url"  : "https://gitlab.com/{}",
+        "messages" : {
+            "notfound" : 302
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "26" : {
+        "name" : "gitee",
+        "desc" : "Gitee is an online forge that allows software version control using Git and is intended primarily for the hosting of open source software. It was launched by Shenzhen-based OSChina in 2013. Gitee claims to have more than 10 million repositories and 5 million users.",
+        "type" : "notapi",
+        "url"  : "https://gitee.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "27" : {
+        "name" : "gitbook",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://{}.gitbook.io/",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "28" : {
+        "name" : "giphy",
+        "desc" : "Giphy, styled as GIPHY, is an American online database and search engine that allows users to search for and share short looping videos with no sound that resemble animated GIF files.",
+        "type" : "notapi",
+        "url"  : "https://giphy.com/{}",
+        "messages" : {
+            "notfound" : 301
+        },
+        "scrape" : true,
+        "_scrape" : {
+            "0" : {
+                "name" : "Bio",
+                "cname" : "p",
+                "class" : "Bio-sc-1dadwig jlkoRO"
+            }
+        },
+        "method" : "GET"
+    },
+
+    "29" : {
+        "name" : "gravatar",
+        "desc" : "Gravatar is a service for providing globally unique avatars and was created by Tom Preston-Werner. Since 2007, it has been owned by Automattic, having integrated it into their WordPress.com blogging platform.",
+        "type" : "notapi",
+        "url"  : "https://en.gravatar.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "30" : {
+        "name" : "pypi",
+        "desc" : "The Python Package Index, abbreviated as PyPI and also known as the Cheese Shop, is the official third-party software repository for Python. It is analogous to the CPAN repository for Perl and to the CRAN repository for R. PyPI is run by the Python Software Foundation, a charity.",
+        "type" : "notapi",
+        "url"  : "https://pypi.org/user/{}/",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "31" : {
+        "name" : "itch.io",
+        "desc" : "Itch.io is a website for users to host, sell and download indie games. Launched in March 2013 by Leaf Corcoran, the service hosts over 500,000 games and items as of April 2022. Itch.io also allows users to host game jams, events where participants have limited time to create a game.",
+        "type" : "notapi",
+        "url"  : "https://itch.io/profile/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "32" : {
+        "name" : "tenor",
+        "desc" : "Tenor is an online GIF search engine and database owned by Google. Its main product is the GIF Keyboard, which is available on Android, iOS, and macOS.",
+        "type" : "notapi",
+        "url"  : "https://tenor.com/users/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+    
+    "33" : {
+        "name" : "myspace",
+        "desc" : "Gather username and location from MySpace.com profiles.",
+        "type" : "notapi",
+        "url"  : "https://myspace.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "34" : {
+        "name" : "hackerone",
+        "desc" : "HackerOne is a vulnerability coordination and bug bounty platform that connects businesses with penetration testers and cybersecurity researchers.",
+        "type" : "notapi",
+        "url"  : "https://hackerone.com/{}?type=user",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "35" : {
+        "name" : "replit",
+        "desc" : "Replit, formerly Repl.it, is a San Francisco-based start-up and an online integrated development environment. Replit being Software as a service allows users to create online projects and write code in many supported languages.",
+        "type" : "notapi",
+        "url"  : "https://replit.com/@{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "36" : {
+        "name" : "flickr",
+        "desc" : "Flickr is an American image hosting and video hosting service, as well as an online community, founded in Canada and headquartered in the United States. It was created by Ludicorp in 2004 and was a popular way for amateur and professional photographers to host high-resolution photos.",
+        "type" : "notapi",
+        "url"  : "https://www.flickr.com/people/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "37" : {
+        "name" : "academia.edu",
+        "desc" : "Academia.edu is a for-profit open repository of academic articles free to read by visitors. Uploading and downloading is restricted to registered users. Additional features are accessible only as a paid subscription. Since 2016 various social networking utilities have been added.",
+        "type" : "notapi",
+        "url"  : "https://independent.academia.edu/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : true,
+        "_scrape" : {
+            "0" : {
+                "name" : "Bio",
+                "cname" : "div",
+                "class" : "profile-bio js-profile-about"
+            }
+        },
+        "method" : "GET"
+    },
+
+    "38" : {
+        "name" : "airbit",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://airbit.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "39" : {
+        "name" : "allmylinks",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://allmylinks.com/{}",
+        "messages" : {
+            "notfound" : "Not Found"
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "40" : {
+        "name" : "anilist",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://allmylinks.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "41" : {
+        "name" : "asciinema",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://asciinema.org/~{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "42" : {
+        "name" : "bitbucket",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://bitbucket.org/{}/",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "43" : {
+        "name" : "blogger",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://{}.blogspot.com",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "44" : {
+        "name" : "buymeacoffee",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.buymeacoffee.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : true,
+        "_scrape" : {
+            "0": {
+                "name" : "Name",
+                "cname" : "span",
+                "class": "cr-bold cr-bold-accented dis-block  w-100 text-fs-30 xs-text-fs-24"
+            }
+        },
+        "method" : "GET"
+    },
+
+    "45" : {
+        "name" : "buzzfeed",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://buzzfeed.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "46" : {
+        "name" : "championat",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.championat.com/user/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "47" : {
+        "name" : "chaturbate",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://chaturbate.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "48" : {
+        "name" : "clubhouse",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.clubhouse.com/@{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "49" : {
+        "name" : "colourlovers",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.colourlovers.com/lover/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "50" : {
+        "name" : "dailymotion",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.dailymotion.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "51" : {
+        "name" : "discogs",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.discogs.com/user/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "52" : {
+        "name" : "disqus",
+        "desc" : "Disqus is an American blog comment hosting service for web sites and online communities that use a networked platform. The company's platform includes various features, such as social integration, social networking, user profiles, spam and moderation tools, analytics, email notifications, and mobile commenting.",
+        "type" : "notapi",
+        "url"  : "https://disqus.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "53" : {
+        "name" : "gesundheitsfrage",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.gesundheitsfrage.net/nutzer/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "54" : {
+        "name" : "fandom",
+        "desc" : "Fandom is a wiki hosting service that hosts wikis mainly on entertainment topics. Its domain is operated by Fandom, Inc., a for-profit Delaware company founded in October 2004 by Jimmy Wales and Angela Beesley.",
+        "type" : "notapi",
+        "url"  : "https://www.fandom.com/u/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : true,
+        "_scrape" : {
+            "0" : {
+                "name" : "Name",
+                "cname" : "div",
+                "class" : "profile-info-card__name"
+            },
+            "1" : {
+                "name" : "Bio",
+                "cname" : "div",
+                "class" : "profile-info-card__about"
+            }
+        },
+        "method" : "GET"
+    },
+
+    "55" : {
+        "name" : "flightradar24",
+        "desc" : "Flightradar24 is a Swedish internet-based service that shows real-time aircraft flight tracking information on a map. It includes flight tracking information, origins and destinations, flight numbers, aircraft types, positions, altitudes, headings and speeds.",
+        "type" : "notapi",
+        "url"  : "https://my.flightradar24.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "56" : {
+        "name" : "flipboard",
+        "desc" : "Flipboard is your personal magazine. It is the most popular way to catch up on the news you care about, read stories from around the world and browse the articles, videos and photos friends are sharing. To begin, pick a few topics and tap any of the tiles to begin flipping through your personal magazine.",
+        "type" : "notapi",
+        "url"  : "https://flipboard.com/@{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "57" : {
+        "name" : "fortnitetracker",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://fortnitetracker.com/profile/all/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "58" : {
+        "name" : "fosstodon",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://fosstodon.org/@{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "59" : {
+        "name" : "freesound",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://freesound.org/people/{}/",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "60" : {
+        "name" : "gamespot",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.gamespot.com/profile/{}/",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "61" : {
+        "name" : "geeksforgeeks",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://auth.geeksforgeeks.org/user/{}",
+        "messages" : {
+            "notfound" : "<title>Login GeeksforGeeks</title>"
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "62" : {
+        "name" : "genius-artists",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://genius.com/artists/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "63" : {
+        "name" : "genius-users",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://genius.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "64" : {
+        "name" : "goodreads",
+        "desc" : "Goodreads is an American social cataloging website and a subsidiary of Amazon that allows individuals to search its database of books, annotations, quotes, and reviews. Users can sign up and register books to generate library catalogs and reading lists.",
+        "type" : "notapi",
+        "url"  : "https://www.goodreads.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "65" : {
+        "name" : "gutefrage",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.gutefrage.net/nutzer/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "66" : {
+        "name" : "harvard-scholar",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://scholar.harvard.edu/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "67" : {
+        "name" : "hashnode",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://hashnode.com/@{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "68" : {
+        "name" : "houzz",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://houzz.com/user/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "69" : {
+        "name" : "hubpages",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://hubpages.com/@{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "70" : {
+        "name" : "hubski",
+        "desc" : "Hubski is a social networking and discussion site, built by Mark Katakowski. A month after creating the site, Katakowski was joined by Steve Clausnitzer, another Ann Arbor resident. Hubski has been designed as alternative to Reddit.",
+        "type" : "notapi",
+        "url"  : "https://hubski.com/user/{}",
+        "messages" : {
+            "notfound" : "No such user."
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "71" : {
+        "name" : "icq",
+        "desc" : "ICQ New is a cross-platform instant messaging and VoIP client. The name ICQ derives from the English phrase I Seek You. Originally developed by the Israeli company Mirabilis in 1996, the client was bought by AOL in 1998, and then by Mail.Ru Group in 2010.",
+        "type" : "notapi",
+        "url"  : "https://icq.im/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "72" : {
+        "name" : "ifttt",
+        "desc" : "IFTTT is a private commercial company that runs online digital automation platforms which it offers as a service. Their platforms provide a visual interface for making cross-platform if statements to its users, which, as of 2020, numbered 18 million people.",
+        "type" : "notapi",
+        "url"  : "https://www.ifttt.com/p/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "73" : {
+        "name" : "issuu",
+        "desc" : "Issuu, Inc. is a Danish-founded American electronic publishing platform based in Palo Alto, California, United States. Founded in 2004 as a Danish startup, the company moved its headquarters to the United States in 2013.",
+        "type" : "notapi",
+        "url"  : "https://issuu.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "74" : {
+        "name" : "itemfix",
+        "desc" : "Ogrish.com was a shock site that presented uncensored news coverage and multimedia material based for the most part on war, accidents and executions. Much of the material depicted was graphic, uncensored, gory videos and images.",
+        "type" : "notapi",
+        "url"  : "https://www.itemfix.com/c/{}",
+        "messages" : {
+            "notfound" : "<title>ItemFix - Channel: </title>"
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "75" : {
+        "name" : "jimdosite",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://{}.jimdosite.com",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "76" : {
+        "name" : "keakr",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.keakr.com/en/profile/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "77" : {
+        "name" : "keybase",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://keybase.io/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "78" : {
+        "name" : "launchpad",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://launchpad.net/~{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "79" : {
+        "name" : "lesswrong",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.lesswrong.com/users/@{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "80" : {
+        "name" : "linktr",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://linktr.ee/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "81" : {
+        "name" : "launchpad",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://launchpad.net/~{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "82" : {
+        "name" : "openstreetmap",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.openstreetmap.org/user/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "83" : {
+        "name" : "lottiefiles",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://lottiefiles.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "84" : {
+        "name" : "medium",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://medium.com/@{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "85" : {
+        "name" : "memrise",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.memrise.com/user/{}/",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "86" : {
+        "name" : "opensource",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://opensource.com/users/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "87" : {
+        "name" : "patreon",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.patreon.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "88" : {
+        "name" : "motorradfrage",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.motorradfrage.net/nutzer/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "89" : {
+        "name" : "munzee",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.munzee.com/m/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "90" : {
+        "name" : "myanimelist",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://myanimelist.net/profile/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "91" : {
+        "name" : "myminifactory",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.myminifactory.com/users/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "92" : {
+        "name" : "blog-naver",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://blog.naver.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "93" : {
+        "name" : "needrom",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.needrom.com/author/{}/",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "94" : {
+        "name" : "newgrounds",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://{}.newgrounds.com",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "95" : {
+        "name" : "periscope",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.periscope.tv/{}/",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "96" : {
+        "name" : "notabug",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://notabug.org/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "97" : {
+        "name" : "nyaa.si",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://nyaa.si/user/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "98" : {
+        "name" : "ogu.gg",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://ogu.gg/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "99" : {
+        "name" : "ok.ru",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://ok.ru/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "100" : {
+        "name" : "pinkbike",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.pinkbike.com/u/{}/",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "101" : {
+        "name" : "pokemonshowdown",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://pokemonshowdown.com/users/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "102" : {
+        "name" : "rateyourmusic",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://rateyourmusic.com/~{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "103" : {
+        "name" : "polygon",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.polygon.com/users/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "104" : {
+        "name" : "promodj",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "http://promodj.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "105" : {
+        "name" : "quizlet",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://quizlet.com/{}",
+        "messages" : {
+            "notfound" : "Page Unavailable</title>"
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "106" : {
+        "name" : "rajce",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://{}.rajce.idnes.cz/",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "107" : {
+        "name" : "redbubble",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.redbubble.com/people/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "108" : {
+        "name" : "royalcams",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://royalcams.com/profile/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "109" : {
+        "name" : "rubygems",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://rubygems.org/profiles/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "110" : {
+        "name" : "rumble",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://rumble.com/user/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "111" : {
+        "name" : "swapd",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://swapd.co/u/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "112" : {
+        "name" : "sbazar",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.sbazar.cz/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "113" : {
+        "name" : "scratch",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://scratch.mit.edu/users/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "114" : {
+        "name" : "scribd",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.scribd.com/{}",
+        "messages" : {
+            "notfound" : "Page not found"
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "115" : {
+        "name" : "shitpostbot",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.shitpostbot.com/user/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "116" : {
+        "name" : "shitpostbot",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.shitpostbot.com/user/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "117" : {
+        "name" : "shpock",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.shpock.com/shop/{}/items",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "118" : {
+        "name" : "sketchfab",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://sketchfab.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "119" : {
+        "name" : "slack",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://{}.slack.com",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "120" : {
+        "name" : "slant",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.slant.co/users/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "121" : {
+        "name" : "slashdot",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://slashdot.org/~{}",
+        "messages" : {
+            "notfound" : "user you requested does not exist"
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "122" : {
+        "name" : "slideshare",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://slideshare.net/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "123" : {
+        "name" : "slides",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://slides.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "124" : {
+        "name" : "smule",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.smule.com/{}",
+        "messages" : {
+            "notfound" : "Smule | Page Not Found (404)"
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "125" : {
+        "name" : "snapchat",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.snapchat.com/add/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "126" : {
+        "name" : "soundcloud",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://soundcloud.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "127" : {
+        "name" : "sourceforge",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://sourceforge.net/u/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "128" : {
+        "name" : "soylentnews",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://soylentnews.org/~{}",
+        "messages" : {
+            "notfound" : "The user you requested does not exist, no matter how much you wish this might be the case."
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "129" : {
+        "name" : "speedrun",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://speedrun.com/user/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "130" : {
+        "name" : "splits",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://splits.io/users/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "131" : {
+        "name" : "sporcle",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.sporcle.com/user/{}/people",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "132" : {
+        "name" : "sportlerfrage",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.sportlerfrage.net/nutzer/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "133" : {
+        "name" : "sports.ru",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.sports.ru/profile/{}/",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "134" : {
+        "name" : "robertsspaceindustries",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://robertsspaceindustries.com/citizens/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "135" : {
+        "name" : "strava",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.strava.com/athletes/{}",
+        "messages" : {
+            "notfound" : "Strava | Run and Cycling Tracking on the Social Network for Athletes"
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "136" : {
+        "name" : "tetr.io",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://ch.tetr.io/u/{}",
+        "messages" : {
+            "notfound" : "No such user!"
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "137" : {
+        "name" : "tldrlegal",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://tldrlegal.com/users/{}/",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "138" : {
+        "name" : "traktrain",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://traktrain.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "139" : {
+        "name" : "tellonym",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://tellonym.me/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "140" : {
+        "name" : "themeforest",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://themeforest.net/user/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "141" : {
+        "name" : "tradingview",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.tradingview.com/u/{}/",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "142" : {
+        "name" : "trakt",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.trakt.tv/users/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "143" : {
+        "name" : "wykop.pl",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.wykop.pl/ludzie/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "144" : {
+        "name" : "xboxgamertag",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://xboxgamertag.com/search/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "145" : {
+        "name" : "tryhackme",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://tryhackme.com/p/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "146" : {
+        "name" : "music-yandex",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://music.yandex/users/{}/playlists",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "147" : {
+        "name" : "typeracer",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://data.typeracer.com/pit/profile?user={}",
+        "messages" : {
+            "notfound" : "Profile Not Found"
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "148" : {
+        "name" : "ultimate-guitar",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://ultimate-guitar.com/u/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "149" : {
+        "name" : "unsplash",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://unsplash.com/@{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "150" : {
+        "name" : "vsco",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://vsco.co/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "151" : {
+        "name" : "vero",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://vero.co/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "152" : {
+        "name" : "vimeo",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://vimeo.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "153" : {
+        "name" : "virustotal",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.virustotal.com/ui/users/{}/trusted_users",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "154" : {
+        "name" : "discourse",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://discourse.wicg.io/u/{}/summary",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "155" : {
+        "name" : "wattpad",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.wattpad.com/user/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "156" : {
+        "name" : "weheartit",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://weheartit.com/{}",
+        "messages" : {
+            "notfound" : "Oops! You've landed on a moving target!"
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "157" : {
+        "name" : "webnode",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://{}.webnode.cz/",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "158" : {
+        "name" : "weblate",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://hosted.weblate.org/user/{}/",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "159" : {
+        "name" : "wordpress",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://profiles.wordpress.org/{}/",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "160" : {
+        "name" : "wordnik",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.wordnik.com/users/{}",
+        "messages" : {
+            "notfound" : "Page Not Found"
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "161" : {
+        "name" : "weblate",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://hosted.weblate.org/user/{}/",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "162" : {
+        "name" : "habr",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://habr.com/ru/users/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "163" : {
+        "name" : "youpic",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://youpic.com/photographer/{}/",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "164" : {
+        "name" : "zhihu",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.zhihu.com/people/{}",
+        "messages" : {
+            "notfound" : "404"
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "165" : {
+        "name" : "akniga",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://akniga.org/profile/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "166" : {
+        "name" : "aminoapps",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://aminoapps.com/u/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "167" : {
+        "name" : "authorstream",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "http://www.authorstream.com/{}/",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "168" : {
+        "name" : "chaos.social",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://chaos.social/@{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "169" : {
+        "name" : "couchsurfing",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.couchsurfing.com/people/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "170" : {
+        "name" : "d3.ru",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://d3.ru/user/{}/posts",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "171" : {
+        "name" : "dailykos",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.dailykos.com/user/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "172" : {
+        "name" : "dating.ru",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "http://dating.ru/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "173" : {
+        "name" : "ebio.gg",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://ebio.gg/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "174" : {
+        "name" : "fl.ru",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.fl.ru/users/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "175" : {
+        "name" : "fixya",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.fixya.com/users/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "176" : {
+        "name" : "furaffinity",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.furaffinity.net/user/{}",
+        "messages" : {
+            "notfound" : "This user cannot be found."
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "177" : {
+        "name" : "geocaching",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.geocaching.com/p/default.aspx?u={}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "178" : {
+        "name" : "gfycat",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://gfycat.com/@{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "179" : {
+        "name" : "hackster",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.hackster.io/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "180" : {
+        "name" : "interpals",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.interpals.net/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "181" : {
+        "name" : "irecommend.ru",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://irecommend.ru/users/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "182" : {
+        "name" : "jbzd.com.pl",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://jbzd.com.pl/uzytkownik/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "183" : {
+        "name" : "kwork.ru",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://kwork.ru/user/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "184" : {
+        "name" : "last.fm",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://last.fm/user/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "185" : {
+        "name" : "livelib.ru",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://www.livelib.ru/reader/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    },
+
+    "186" : {
+        "name" : "note",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://note.com/{}",
+        "messages" : {
+            "notfound" : 404
+        },
+        "scrape" : false,
+        "method" : "GET"
+    }
+
+}
