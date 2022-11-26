@@ -2,8 +2,6 @@
 <h1 align="center">
   <img src="logo.webp" height="400px" width="600px" alt="Slash">
 </h1>
-
-
 <h4 align="center">Slash is automated doxer tool</h4>
 
 **Slash** supports **social media** search (over 180 websites) , **forum** search , **pastebin leak** search , **github commit** search. New will be added soon... Also slash scrapes multiple informations from important websites as : Name , Bio , Location , Website , User Info... And it extracting Phone Number - Email Adress from Bios... 
@@ -38,3 +36,5 @@ python slash.py thesaderror
 </h1>
 
 Contact (Discord) : thesaderror#1351
+
+![](https://visitor-badge.glitch.me/badge?page_id=thesaderror.slash)
