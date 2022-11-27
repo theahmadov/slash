@@ -16,7 +16,7 @@ Slash include threading modules. It make slash **faster** than others. It means,
 git clone https://github.com/thesaderror/slash
 cd slash
 pip install -r requirements.txt
-python slash.py username # or mail adress
+python slash.py help
 ```
 
 ## Usage & Syntax
