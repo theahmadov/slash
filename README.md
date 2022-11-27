@@ -1,6 +1,6 @@
 <!-- Logo -->
 <h1 align="center">
-  <img src="logo.webp" height="400px" width="600px" alt="Slash">
+  <img src="./images/logo.png" height="400px" width="600px" alt="Slash">
 </h1>
 <h4 align="center">Slash is automated doxer tool</h4>
 
