@@ -10,6 +10,9 @@ from lib import (
 )
 
 from api.extract import *
+from api.leakcheck import check as leak 
+from api.leakcheck import check as leakcheck 
+
 import json
 from lib.scrape import *
 import sys
@@ -40,6 +43,25 @@ class gathered:
     mails = []
 
 
+def parse(key,value,from_name,from_url):
+    if(key=="Location"):
+        #print(value)
+        gathered.locations.append({"name":from_name,"source":from_url,"value":value})
+        #print(gathered.locations)
+    elif(key=="Name"):
+        gathered.names.append({"name":from_name,"source":from_url,"value":value})
+    elif(key=="Education"):
+        gathered.educations.append({"name":from_name,"source":from_url,"value":value})
+    elif(key=="Bio"):
+        gathered.bios.append(value)
+        threading.Thread(target=func_extract,args=(from_name,from_url,value,)).start()
+
+    elif(key=="Website"):
+        gathered.linked_urls.append({"name":from_name,"source":from_url,"value":value})
+    elif(key=="User Info"):
+        gathered.user_info.append(value)
+        gathered.user_infos.append({"name":from_name,"source":from_url,"value":value})
+
 def get_db():
     with open(config.socmint,"r") as f:
         return json.loads(f.read())
@@ -50,6 +72,7 @@ def func_extract(from_name,from_url,value):
         if(len(nums)!=0):
             for i in nums:
                 gathered.phone_numbers.append({"name":from_name,"source":from_url,"value":i})
+                leakcheck(value)
     except Exception as e:
         print(e)
 
@@ -61,6 +84,7 @@ def func_extract(from_name,from_url,value):
         if(len(mails)!=0):
             for j in mails:
                 gathered.mails.append({"name":from_name,"source":from_url,"value":j})
+                leakcheck(value)
     except Exception as e:
         print(e)
 
@@ -79,6 +103,7 @@ def parse(key,value,from_name,from_url):
 
     elif(key=="Website"):
         gathered.linked_urls.append({"name":from_name,"source":from_url,"value":value})
+        leakcheck(value)
     elif(key=="User Info"):
         gathered.user_info.append(value)
         gathered.user_infos.append({"name":from_name,"source":from_url,"value":value})

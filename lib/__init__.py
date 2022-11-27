@@ -34,6 +34,7 @@ class symbol:
     forum_found  =f"[{color.whitebg}FOUND{color.reset}]"
     paste_found  =f"[{color.redbg}PASTE{color.reset}]"
     github_found  =f"[{color.redbg}GITHUB{color.reset}]"
+    leakcheck_found  =f"[{color.redbg}LEAK-CHECK{color.reset}]"
     help_found   =f"[{color.underline}{color.bold}{color.green}HELP{color.reset}]"
 
     error = f"[{color.red}ERROR{color.reset}]"
