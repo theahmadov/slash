@@ -13,7 +13,7 @@ Slash include threading modules. It make slash **faster** than others. It means,
 ## Installation
 
 ```
-git clone https://github.com/thesaderror/slash
+git clone https://github.com/redc86/slash
 cd slash
 pip install -r requirements.txt
 python slash.py help
@@ -26,7 +26,7 @@ python slash.py help
 
 * Example : 
 ```
-python slash.py thesaderror
+python slash.py redc86
 ```
 <h1 align="center">
   <img src="https://raw.githubusercontent.com/thesaderror/slash/main/images/1.png">
@@ -35,6 +35,6 @@ python slash.py thesaderror
   <img src="https://github.com/thesaderror/slash/blob/main/images/2.png?raw=true">
 </h1>
 
-Contact (Discord) : thesaderror#1351
+Contact (Discord) : redc86#1351
 
 ![](https://visitor-badge.glitch.me/badge?page_id=thesaderror.slash)
