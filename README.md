@@ -34,6 +34,9 @@ python slash.py redc86
 <h1 align="center">
   <img src="https://github.com/thesaderror/slash/blob/main/images/2.png?raw=true">
 </h1>
+### Credits
+Links of social.json : [sherlock-project](https://github.com/sherlock-project/sherlock/)
+
 
 (Discord) : redc86#1351
 (Matrix)  : @redc86:matrix.org
