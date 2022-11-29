@@ -35,6 +35,7 @@ python slash.py redc86
   <img src="https://github.com/thesaderror/slash/blob/main/images/2.png?raw=true">
 </h1>
 
-Contact (Discord) : redc86#1351
+(Discord) : redc86#1351
+(Matrix)  : @redc86:matrix.org
 
 ![](https://visitor-badge.glitch.me/badge?page_id=thesaderror.slash)
