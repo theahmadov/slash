@@ -94,7 +94,7 @@
     },
 
     "4" : {
-        "name" : "devintart",
+        "name" : "deviantart",
         "desc" : "DeviantArt is an American online art community that features artwork, videography and photography.",
         "type" : "notapi",
         "url"  : "https://www.deviantart.com/{}/",
