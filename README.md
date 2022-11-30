@@ -40,5 +40,6 @@ Links of social.json : [sherlock-project](https://github.com/sherlock-project/sh
 
 (Discord) : redc86#1351
 (Matrix)  : @redc86:matrix.org
+(Server)  : https://matrix.to/#/#ae86:matrix.org
 
 ![](https://visitor-badge.glitch.me/badge?page_id=thesaderror.slash)
