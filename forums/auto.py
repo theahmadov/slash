@@ -21,7 +21,7 @@ except:
 
 
 class config:
-    focmint = "./database/forums.json"
+    focmint = "./.db/forums.json"
 
 
 def get_db():

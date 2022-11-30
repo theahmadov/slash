@@ -24,7 +24,7 @@ except:
     sys.exit(0)
 
 class config:
-    socmint = "./database/socmint.json"
+    socmint = "./.db/socmint.json"
     tmout = 4
     notapi_fn = "{} {} : {}"
     notapi_nf = "{} {} : {}"
