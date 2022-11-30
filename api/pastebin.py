@@ -18,7 +18,6 @@ from api.extract import extract
 class gathered:
     links = []
     includes = []
-
 def search(value):
     print(f"{symbol.log} Searching {color.bold}{color.orange}{value}{color.reset} on {color.bold}Pastebin{color.reset}...")
         
