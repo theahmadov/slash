@@ -2,16 +2,16 @@ import typer
 from os import system
 import time
 
-from smi import smi
-from fmi import fmi 
+from profiles import profiles
+from forums import forums 
 
-from lib import (
+from core import (
     banner,
     color,
     symbol,
     clear
 )
-from lib.check import *
+from core.check import *
 import threading
 import argparse 
 
@@ -37,8 +37,8 @@ def gethelp():
 def _username(username):
     print(f"{symbol.log} {symbol.slash} starting...")
     print(f"{symbol.log} Username [{color.green}{color.bold}{username}{color.reset}] succesfully setted.")
-    threading.Thread(target=smi.run,args=(username,)).start()
-    threading.Thread(target=fmi.run,args=(username,)).start()
+    threading.Thread(target=profiles.run,args=(username,)).start()
+    threading.Thread(target=forums.run,args=(username,)).start()
     time.sleep(5)
     threading.Thread(target=pastesearch,args=(username,)).start()
     threading.Thread(target=githubsearch,args=(username,)).start()

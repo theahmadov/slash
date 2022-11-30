@@ -1,4 +1,4 @@
-from lib import (
+from core import (
     banner,
     color,
     symbol,
@@ -14,7 +14,7 @@ from api.leakcheck import check as leak
 from api.leakcheck import check as leakcheck 
 
 import json
-from lib.scrape import *
+from core.scrape import *
 import sys
 import threading 
 try:

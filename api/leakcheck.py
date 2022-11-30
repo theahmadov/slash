@@ -1,6 +1,6 @@
 import requests 
 import json 
-from lib import *
+from core import *
 
 def check(value):
     res = json.loads(requests.get(f"https://leakcheck.net/api/public?key=49535f49545f5245414c4c595f4150495f4b4559&check={value}").text)

@@ -1,10 +1,10 @@
-from fmi.auto import *
+from forums.auto import *
 
 class gathered:
     username = ""
     profiles = []
 
-def fmi_check(dct):
+def forums_check(dct):
     username = gathered.username
     name=dct["name"]
     url=dct["url"].format(username)
@@ -56,11 +56,11 @@ def focmint(username):
 
     for i in range(0,ldb):
         try:
-            fmi_check(db[i])
+            forums_check(db[i])
         except Exception as e:
             pass#;print(e)
 
-class fmi:
+class forums:
     def run(username):
         print(f"{symbol.log} Searching {color.bold}{color.orange}{username}{color.reset} on {color.bold}Forums{color.reset}...")
         gathered.username = username

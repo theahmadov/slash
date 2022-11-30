@@ -1,5 +1,5 @@
-from lib.scrape import *
-from smi.autoimport import *
+from core.scrape import *
+from profiles.autoimport import *
 
 def split_extra(name,txt):
     out = ""

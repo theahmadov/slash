@@ -1,4 +1,4 @@
-from smi.autoimport import *
+from profiles.autoimport import *
 from api.scrape import *
 
 def notapi(username,dct):

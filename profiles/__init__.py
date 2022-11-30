@@ -2,8 +2,8 @@
 #   Social Media Scan  #
 ########################
 
-from smi.autoimport import *
-from smi.notapi import notapi
+from profiles.autoimport import *
+from profiles.notapi import notapi
 
 def socmint(username):
     db = get_db()
@@ -21,7 +21,7 @@ def socmint(username):
     
 
 
-class smi:
+class profiles:
     def run(username):
         print(f"{symbol.log} Starting {color.bold}Social Media{color.reset} OSINT for {color.bold}{color.orange}{username}{color.reset}...")
         socmint(username)
