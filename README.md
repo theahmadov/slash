@@ -29,10 +29,10 @@ python slash.py help
 python slash.py redc86
 ```
 <h1 align="center">
-  <img src="https://raw.githubusercontent.com/thesaderror/slash/main/images/1.png">
+  <img src="https://raw.githubusercontent.com/redc86/slash/main/images/1.png">
 </h1>
 <h1 align="center">
-  <img src="https://github.com/thesaderror/slash/blob/main/images/2.png?raw=true">
+  <img src="https://github.com/redc86/slash/blob/main/images/2.png?raw=true">
 </h1>
 
 ### Credits
