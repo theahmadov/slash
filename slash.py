@@ -31,7 +31,7 @@ def gethelp():
         {color.bold}leak check{color.reset}
 
     Example :
-    {color.graybg}{color.red}{color.bold}${color.reset}{color.graybg} python slash.py thesaderror{color.reset}
+    {color.graybg}{color.red}{color.bold}${color.reset}{color.graybg} python slash.py redc86{color.reset}
     {color.graybg}{color.red}{color.bold}${color.reset}{color.graybg} python slash.py target@gmail.com{color.reset}""")
 
 def _username(username):
