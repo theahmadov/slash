@@ -3,7 +3,7 @@
 Slash is **Automated Osint Tool** that allows you to **OSINT** people by their username.
 
 ### Slash OSINT Modules :
-```bash
+```python
 |__Checker                                                    |
 |  |                                                          |
 |  |__Social Media Profile Check (+100)                       |
