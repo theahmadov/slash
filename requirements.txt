@@ -2,3 +2,4 @@ sockets
 requests
 pyfiglet
 typer
+instagramy
