@@ -3,13 +3,15 @@ from api.scrape import *
 import threading
 
 def ozel_scrape(url,username):
-    if(url.startswith("https://www.instagram.com/")):
-        user = InstagramUser(username)
-        email, phone_number = user.user_data['business_email'], user.user_data['business_phone_number']
-        func_extract("instagram", url, f"{email} {phone_number}")
-        #print(user.biography)
-        parse("Bio",user.biography,"instagram",url)
-        
+    try:
+        if(url.startswith("https://www.instagram.com/")):
+            user = InstagramUser(username)
+            email, phone_number = user.user_data['business_email'], user.user_data['business_phone_number']
+            func_extract("instagram", url, f"{email} {phone_number}")
+            #print(user.biography)
+            parse("Bio",user.biography,"instagram",url)
+    except:
+        pass
 def notapi(username,dct):
     url = (dct["url"]).format(username)
     desc = dct["desc"]
