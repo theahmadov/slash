@@ -1,14 +1,31 @@
-<!-- Logo -->
-<h1 align="center">
-  <img src="./images/logo.png" height="400px" width="600px" alt="Slash">
-</h1>
-<h4 align="center">Slash is automated doxer tool</h4>
+# [Slash](https://github.com/redc86/slash)
 
-**Slash** supports **social media** search (over 180 websites) , **forum** search , **pastebin leak** search , **github commit** search. New will be added soon... Also slash scrapes multiple informations from important websites as : Name , Bio , Location , Website , User Info... And it extracting Phone Number - Email Adress from Bios... 
+Slash is **Automated Osint Tool** that allows you to **OSINT** people by their username.
 
-Slash include threading modules. It make slash **faster** than others. It means, it search social media,github commit,forums,pastebin in same time.
-
-(Some of social-media websites gathered from sherlock-project. Dont forget to check it too.)
+### Slash OSINT Modules :
+```bash
+|
+|__Checker
+|  |
+|  |__Social Media Profile Check (+100) 
+|  |__Forums Profile Check (+30) 
+|  |__Leak Check (Username,Email-Adress)
+|  
+|__Search
+|  |
+|  |__Pastebin Paste Search
+|  |__Github Commit Search
+|
+|__Extract Scrape
+|  |
+|  |__Phone Number Extract      (From Bios,Raw Texts)
+|  |__Mail Extractor            (From Bios,Raw Texts)
+|  |__Bio Scraper               (Social Media)
+|  |__Name Scraper              (Social Media)
+|  |__Location Scraper          (Social Media)
+|  |__Education Info Scraper    (Social Media)
+|  |__Personal Website Scraper  (Social Media)
+```
 
 ## Installation
 
@@ -36,7 +53,6 @@ python slash.py redc86
 </h1>
 
 ### Credits
-
 Links of social.json : [sherlock-project](https://github.com/sherlock-project/sherlock/)
 
 
