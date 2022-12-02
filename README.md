@@ -4,7 +4,6 @@ Slash is **Automated Osint Tool** that allows you to **OSINT** people by their u
 
 ### Slash OSINT Modules :
 ```bash
-|
 |__Checker
 |  |
 |  |__Social Media Profile Check (+100) 
