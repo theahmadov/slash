@@ -4,15 +4,15 @@ Slash is **Automated Osint Tool** that allows you to **OSINT** people by their u
 
 ### Slash OSINT Modules :
 ```bash
-|__Checker
-|  |
-|  |__Social Media Profile Check (+100) 
-|  |__Forums Profile Check (+30) 
-|  |__Leak Check (Username,Email-Adress)
-|  
-|__Search
-|  |
-|  |__Pastebin Paste Search
+|__Checker                                                    |
+|  |                                                          |
+|  |__Social Media Profile Check (+100)                       |
+|  |__Forums Profile Check (+30)                              |
+|  |__Leak Check (Username,Email-Adress)                      |
+|                                                             |
+|__Search                                                     |
+|  |                                                          |
+|  |__Pastebin Paste Search                                   |
 |  |__Github Commit Search                                    |
 |                                                             |
 |__Extract Scrape                                             |
