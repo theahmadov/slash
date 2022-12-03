@@ -1822,12 +1822,12 @@
     },
 
     "135" : {
-        "name" : "strava",
+        "name" : "producthunt",
         "desc" : "",
         "type" : "notapi",
-        "url"  : "https://www.strava.com/athletes/{}",
+        "url"  : "https://www.producthunt.com/@{}",
         "messages" : {
-            "notfound" : "Strava | Run and Cycling Tracking on the Social Network for Athletes"
+            "notfound" : 404
         },
         "scrape" : false,
         "method" : "GET"
