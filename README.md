@@ -6,7 +6,7 @@ Slash is **Automated Osint Tool** that allows you to **OSINT** people by their u
 ```python
 |__Checker                                                    |
 |  |                                                          |
-|  |__Social Media Profile Check (+100)                       |
+|  |__Social Media Profile Check (+187)                       |
 |  |__Forums Profile Check (+30)                              |
 |  |__Leak Check (Username,Email-Adress)                      |
 |                                                             |

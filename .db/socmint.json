@@ -2443,6 +2443,18 @@
         },
         "scrape" : false,
         "method" : "GET"
+    },
+
+    "187" : {
+        "name" : "doku.tips",
+        "desc" : "",
+        "type" : "notapi",
+        "url"  : "https://doku.tips/profile/KittyCat686",
+        "messages" : {
+            "notfound" : 307
+        },
+        "scrape" : false,
+        "method" : "GET"
     }
 
 }
