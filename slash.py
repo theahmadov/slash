@@ -40,8 +40,10 @@ def _username(username):
     threading.Thread(target=profiles.run,args=(username,)).start()
     threading.Thread(target=forums.run,args=(username,)).start()
     time.sleep(5)
-    threading.Thread(target=pastesearch,args=(username,)).start()
-    threading.Thread(target=githubsearch,args=(username,)).start()
+    try:threading.Thread(target=pastesearch,args=(username,)).start()
+    except:pass
+    try:threading.Thread(target=githubsearch,args=(username,)).start()
+    except:pass
 
 def _mail(mail_adress):
     print(f"{symbol.log} {symbol.slash} starting...")

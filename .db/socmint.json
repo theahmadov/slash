@@ -1133,7 +1133,15 @@
         "messages" : {
             "notfound" : 404
         },
-        "scrape" : false,
+        "scrape" : true,
+
+        "_scrape" : {
+            "0" : {
+                "name" : "User Info",
+                "cname" : "div",
+                "class" : "identity-table"
+            }
+        },
         "method" : "GET"
     },
 
