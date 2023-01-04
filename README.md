@@ -56,8 +56,6 @@ python slash.py redc86
 Links of social.json : [sherlock-project](https://github.com/sherlock-project/sherlock/)
 
 
-Discord : redc86#1351\
-Matrix  : @redc86:matrix.org\
-Server  : https://matrix.to/#/#ae86:matrix.org\
+*` Discord : redc86#1351`
 
 ![](https://visitor-badge.glitch.me/badge?page_id=thesaderror.slash)
