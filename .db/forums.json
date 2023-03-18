@@ -71,7 +71,7 @@
         },
 
         {
-            "name" : "ardunio",
+            "name" : "arduino",
             "url" : "https://create.arduino.cc/projecthub/{}",
             "check_code" : "2",
             "check" : 404
