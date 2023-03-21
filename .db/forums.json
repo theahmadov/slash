@@ -72,7 +72,7 @@
 
         {
             "name" : "arduino",
-            "url" : "https://create.arduino.cc/projecthub/{}",
+            "url" : "https://projecthub.arduino.cc/{username}",
             "check_code" : "2",
             "check" : 404
         },
