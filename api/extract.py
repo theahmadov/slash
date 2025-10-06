@@ -10,6 +10,21 @@ from core import (
     css
 )
 
+"""
+Email extraction previously used a very loose pattern ("\S+@\S+") which
+caused false positives (e.g., tokens with trailing punctuation). We now use a
+centralized, stricter regex that matches typical email addresses and respects
+word boundaries.
+
+Pattern:
+- Local part: [A-Za-z0-9._%+-]+
+- Domain: [A-Za-z0-9.-]+ with at least one dot
+- TLD: [A-Za-z]{2,}
+"""
+
+# Centralized, stricter email pattern
+EMAIL_RE = re.compile(r"\b[a-zA-Z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b")
+
 def alert(values,from_name,phones=False,mails=False):
     print()
     if(phones):
@@ -38,7 +53,7 @@ class extract:
             return []
 
     def mail(from_name,text):
-        mails = re.findall('\S+@\S+', text) 
+        mails = EMAIL_RE.findall(text)
         if(len(mails)!=0):
             alert(mails,from_name,mails=True)
         try:
@@ -48,7 +63,7 @@ class extract:
 
     class just:
         def mail(text):
-            mails = re.findall('\S+@\S+', text) 
+            mails = EMAIL_RE.findall(text)
             try:
                 return mails
             except:
